@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Colaborar</title>
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-navigation-bar">
+                <a class="logo" href="index.html">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+                <nav>
+                  <ul class="header-links">
+                    <li><a href="adoptar.html">Adoptar</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                    <li><a href="campanas.html">Campañas</a></li>
+                  </ul>
+                </nav>
+                <a class="cta" href="colaborar.html"><button>Colaborar</button></a>
+            </div>
+
+            <div class="basic-banner">
+                <h1>¡Apúntate para colaborar y recibir novedades!</h1>
+            </div>
+
+        </header>
+
+        <p class="subtitle">Envíanos comentarios, entérate de todos los nuevos perros que entran, las campañas que estamos llevando a cabo, estate al día de todas las notícias sobre el mundo perruno y mucho más.</p>
+
+        <form action="#">            
+            <label for="name">Nombre:</label>
+            <input type="text" name="name" required><br>
+    
+            <label for="cognom">Apellidos:</label>
+            <input type="text" name="cognom" maxlength="25" required><br>
+
+            <label>Tratamiento:</label>
+            <div class="radio-group">
+                <input type="radio" id="tratamiento1" name="tratamiento" required>
+                <label for="tratamiento1">Sr.</label>
+
+                <input type="radio" id="tratamiento2" name="tratamiento" required>
+                <label for="tratamiento2">Sra.</label>
+
+                <input type="radio" id="tratamiento3" name="tratamiento" required>
+                <label for="tratamiento3">Sin tratamiento.</label>
+            </div>
+
+            <div class="form-row">
+                <div class="form-row-item">
+                    <label for="tel">Teléfono:</label>
+                    <input type="tel" name="tel" required minlength="9"><br>
+                </div>
+
+                <div class="form-row-item">
+                    <label for="cod_post">Código postal:</label>
+                    <input type="number" name="cod_post" required minlength="5"><br>
+                </div>
+            </div>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" name="email" required><br>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" name="password" required minlength="8"><br>
+    
+            <label for="cuota">Cuota de Socio:</label>
+            <select name="cuota" id="cuota">
+                <option value="smix1">Sin cuota</option>
+                <option value="smix1">5€</option>
+                <option value="smix2">10€</option>
+                <option value="daw1">15€</option>
+                <option value="dam1">20€</option>
+                <option value="daw2">50€</option>
+                <option value="dam2">100€</option>
+            </select><br>
+    
+            <label>Temas de interés:</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="interes1" name="interes1">
+                <label for="interes1">Nuevos gatos</label><br>
+
+                <input type="checkbox" id="interes2" name="interes2">
+                <label for="interes2">Nuevos perros</label><br>
+
+                <input type="checkbox" id="interes3" name="interes3">
+                <label for="interes3">Notícias</label><br>
+
+                <input type="checkbox" id="interes4" name="interes4">
+                <label for="interes4">Campañas</label><br>
+            </div>
+
+            <div class="checkbox-group2">
+                <input type="checkbox" id="privacy_policy" name="privacy_policy" required>
+                <label for="privacy_policy">Confirmo la política de privacidad</label><br>
+            </div>
+
+            <div class="checkbox-group3">
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Recibir nuestra newsletter</label><br>
+            </div>
+    
+            <button type="submit">Enviar</button>
+        </form>
+
+        <footer>
+            <div class="footer-navigation-bar">
+                <nav class="footer-links">
+                    <a href="adoptar.html">Adoptar</a>
+                    <a href="noticias.html">Notícias</a>
+                    <a class="logo" src="images/logo.png" href="index.html">
+                        <img src="images/logo.png" alt="logo">
+                    </a>
+                    <a href="campanas.html">Campañas</a>
+                    <a href="colaborar.html">Colaborar</a>
+                </nav>
+                <div class="footer-social-media">
+                    <a href="https://www.instagram.com/" class="icon" target="_blank">
+                        <img src="images/instagram.png" alt="instagram">
+                    </a>
+                    <a class="icon" href="https://www.youtube.com/" target="_blank">
+                        <img src="images/youtube.png" alt="twitter">
+                    </a>
+                    <a class="icon" href="https://www.facebook.com/?locale=es_ES" target="_blank">
+                        <img src="images/facebook.png" alt="facebook">
+                    </a>
+                    <a class="icon" href="https://www.tiktok.com/es/" target="_blank">
+                        <img src="images/tiktok.png" alt="tiktok">
+                    </a>
+                </div>
+            </div>
+            <p><small>© 2023 — 2024 Privacy — Terms</small></p>
+        </footer>
+
+    </body>
+</html>
