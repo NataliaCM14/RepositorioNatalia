@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="pokedex.xsl"?>
+<pokedex>
+	<title>Pokedex</title>
+	<pokemon numero="001">
+		<imagen>img/001.png</imagen>
+		<nombre>Bulbasur</nombre>
+		<tipos>
+			<tipo>Planta</tipo>
+			<tipo>Veneno</tipo>
+		</tipos>
+	</pokemon>
+	<pokemon numero="002">
+		<imagen>img/002.png</imagen>
+		<nombre>Ivysaur</nombre>
+		<tipos>
+			<tipo>Veneno</tipo>
+		</tipos>
+	</pokemon>
+	<pokemon numero="004">
+		<imagen>img/004.png</imagen>
+		<nombre>Bulbasur</nombre>
+		<tipos>
+			<tipo>Fuego</tipo>
+		</tipos>
+	</pokemon>
+	<pokemon numero="005">
+		<imagen>img/005.png</imagen>
+		<nombre>Charmeleon</nombre>
+		<tipos>
+			<tipo>Fuego</tipo>
+		</tipos>
+	</pokemon>
+	<pokemon numero="006">
+		<imagen>img/006.png</imagen>
+		<nombre>Charizard</nombre>
+		<tipos>
+			<tipo>Fuego</tipo>
+			<tipo>Volador</tipo>
+		</tipos>
+	</pokemon>
+	<pokemon numero="009">
+		<imagen>img/009.png</imagen>
+		<nombre>Blastoise</nombre>
+		<tipos>
+			<tipo>Agua</tipo>
+		</tipos>
+	</pokemon>
+	<pokemon numero="010">
+		<imagen>img/010.png</imagen>
+		<nombre>Caterpie</nombre>
+		<tipos>
+			<tipo>Bicho</tipo>
+		</tipos>
+	</pokemon>
+	<pokemon numero="011">
+		<imagen>img/011.png</imagen>
+		<nombre>Metapod</nombre>
+		<tipos>
+			<tipo>Bicho</tipo>
+		</tipos>
+	</pokemon>
+	<pokemon numero="012">
+		<imagen>img/012.png</imagen>
+		<nombre>Butterfree</nombre>
+		<tipos>
+			<tipo>Bicho</tipo>
+			<tipo>Volador</tipo>
+		</tipos>
+	</pokemon>
+	<pokemon numero="014">
+		<imagen>img/014.png</imagen>
+		<nombre>Kakuna</nombre>
+		<tipos>
+			<tipo>Bicho</tipo>
+			<tipo>Veneno</tipo>
+		</tipos>
+	</pokemon>
+	<pokemon numero="015">
+		<imagen>img/015.png</imagen>
+		<nombre>Beedrill</nombre>
+		<tipos>
+			<tipo>Bicho</tipo>
+			<tipo>Veneno</tipo>
+		</tipos>
+	</pokemon>
+	<pokemon numero="016">
+		<imagen>img/016.png</imagen>
+		<nombre>Pidgey</nombre>
+		<tipos>
+			<tipo>Normal</tipo>
+			<tipo>Volador</tipo>
+		</tipos>
+	</pokemon>
+</pokedex>
