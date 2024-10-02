@@ -1,0 +1,738 @@
+/*EDITS BÁSICOS*/
+:root {
+    --primary-color: #25cce6;
+    --secondary-color: #00ba85;
+    --dark-overlay: rgba(0, 0, 0, 0.742);
+    --darker-color: #212121;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Figtree', sans-serif;
+    line-height: 1.5;
+}
+
+img {
+    display: block;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    max-width: 100%;
+    line-height: 1.2;
+    padding-top: 3rem;
+}
+
+h1 span {
+    color: var(--primary-color);
+}
+
+h2 {
+    font-size: 30px;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px 0 20px 100px;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    color: white;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
+h3 {
+    font-size: 25px;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    width: 100%;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:768px) {
+    h2 {
+        margin-top: 2rem;
+    }
+}
+
+#hero {
+    height: 650px;
+    color: white;
+    position: relative;
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 32, 97, 0.282);
+    z-index: -1;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+    padding-bottom: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.container .btn {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 100px;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    margin: 0;
+    
+}
+
+li a, #Links li a, .nav.visible li a {
+    color: white;
+    transition-duration: 400ms;
+}
+
+li a:hover, #Links li a:hover, .nav.visible li a:hover {
+    color: var(--primary-color);
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    .hero {
+        height: 500px;
+    }
+
+    .abrir-menu,
+    .cerrar-menu {
+        color: white;
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--darker-color);
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax var(--dark-overlay);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a {
+        color: #ecececec;
+    }
+
+    .logo {
+        margin-top: 1rem;
+    }
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.btn {
+    color: white;
+    background-color: var(--secondary-color);;
+    border: none;
+    padding: .7rem 1.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    transition-duration: 400ms;
+}
+
+.btn:hover {
+    background-color: #02033c;
+}
+
+
+a.btn {
+    display: inline-block;
+    text-align: center;
+    padding: .7rem 1.5rem;
+    border-radius: 2rem;
+    text-decoration: none;
+}
+    
+
+/*GALERÍA*/
+.gallery {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    text-align: center;
+    border-radius: 1rem;
+    padding-bottom: 1rem;
+}
+
+.gallery-item {
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.gallery img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: all 0.5s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.popup-img {
+    position: fixed;
+    top: 0; left: 0;
+    background: rgba(0,0,0,.9);
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    display: none;
+}
+
+.popup-img span {
+    position: absolute;
+    top: 0; right: 10px;
+    font-size: 40px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.popup-img img {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 90%;
+    max-width: 90%;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/*SLIDER DE IMÁGENES*/
+.intro-container {
+    width: 80%;
+    height: 650px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.intro-container a:hover {
+    color: blue;
+}
+
+.intro-description {
+    flex: 1;
+    max-width: 80%;
+}
+
+.img-slider {
+    flex: 2;
+    position: relative;
+    width: 80%;
+    height: 500px;
+    margin: 20px auto;
+
+}
+
+.img-slider .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.img-slider .slide.active {
+    opacity: 1;
+}
+
+.img-slider .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.img-slider .navigation {
+    position: absolute;
+    display: flex;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.img-slider .navigation .slidebutton {
+    background: rgba(165, 165, 165, 0.5);
+    width: 25px;
+    height: 3px;
+    margin: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.img-slider .navigation .slidebutton.active {
+    background: white;
+}
+
+@media screen and (max-width:950px) {
+  
+  .intro-container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    height: 800px;
+  }
+
+  
+  .intro-container {
+    gap: 0;
+  }
+
+  
+  .img-slider {
+    flex-shrink: 0;
+    min-width: 300px;
+    width: 80%;
+  }
+}
+
+
+/*ICONOS DESCRIPTIVOS DE LAS HABITACIONES*/
+.icons {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.icons div {
+    width: 150px;
+    text-align: center;
+    margin: 0 1rem 0 1rem;
+}
+
+.icons img {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 100%;
+}
+
+.icons p {
+    word-wrap: break-down;
+}
+
+.sm-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+/*FORMULARIO DE RESERVAS*/
+form {
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    gap: 1 rem;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.reservas-subtitle {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.form-group {
+    flex: 1;
+    min-width: 200px;
+}
+
+.form-btn {
+    width: 100%;
+    margin: 0;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+input, select {
+    height: 3.5rem;
+    padding: 1rem;
+    border-radius: 4px;
+    width: 100%;
+}
+
+input, select, textarea {
+    border: 1px solid #b3b3b3;
+}
+
+form button {
+    align-self: center;
+}
+
+@media (max-width: 768px) {
+
+    #form-reservas {
+        height: 550px;
+    }
+
+    .form-row {
+        flex-direction: column; 
+        align-items: stretch;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+}
+
+
+/*INFO DEL SPA CON IMAGEN LATERAL*/
+.spa-info-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    background-color: var(--darker-color);
+    border-radius: 5px;
+    gap: 3rem;
+}
+
+.spa-info-container img {
+    width: 50%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 5px 0 0 5px;
+}
+
+.spa-info-container div {
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-right: 3rem;
+    padding-bottom: 1rem;
+}
+
+.spa-info-container .btn {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 950px) {
+    .spa-info-container {
+        width: 80%;
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .spa-info-container img {
+        width: 100%;
+        height: 350px;
+        margin-bottom: 20px;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .spa-info-container div {
+        margin-left: 3rem;
+    }
+}
+
+
+/*GALERÍA DE HABITACIONES*/
+.rooms-gallery {
+    width: 80%;
+    height: 700px;
+    margin: 0 auto;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.room-card {
+    width: 45%;
+    height: 350px;
+    perspective: 1000px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.room-card:hover {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-wrap: wrap;
+}
+
+.card-back::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark-overlay);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.card-back span {
+    color: #07bcd8;
+    font-weight: 700;
+}
+    
+.card-front {
+    background-color: #d5d5d5;
+    color: #ffffff;
+}
+    
+.card-back {
+    transform: rotateY(180deg);
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-front p, .card-back p {
+    z-index: 1;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    line-height: 0;
+}
+
+.card-front p {
+    line-height: 1.4;
+    height: 20%;
+}
+
+@media (max-width: 950px) {
+    .rooms-gallery {
+        height: 1300px;
+    }
+    .room-card {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+.room-title {
+    width: 100%;
+    background: var(--dark-overlay);
+    padding-top: 25px;
+    padding-bottom: 20px;
+    margin: 0;
+    border-radius: 5px 5px 0 0;
+}
+
+.card-front img, .card-back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+/*MAPA*/
+.map {
+    width: 80%;
+    margin: 0 auto;
+}
+    
+.map iframe {
+    width: 100%;
+    height: 550px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:768px) {
+    .map iframe{
+        height: 300px;
+    }
+}
+
+/*FORMULARIO DE CONTACTO*/
+#formulari-contacte {
+    display: block;
+    width: 50%;
+}
+
+textarea {
+    width: 100%;
+}
+
+#comentari {
+    margin-top: 5px;
+}
+
+/*FOOTER*/
+footer {
+    width: 100%;
+    background-color: var(--darker-color);
+    padding-bottom: 3rem;
+    color: white;
+}
+
+.footer-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+.about img {
+    width: 30px;
+    height: 30px;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+.social a {
+    display: inline-block;
+}
+
+#Links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#Links li {
+    margin-top: 1rem;
+}
+
+#Links a {
+    color: white;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.newsletter input {
+    height: 2.5rem;
+    width: 100%;
+}
+
+.newsletter button {
+    width: auto;
+    align-self: flex-end;
+}

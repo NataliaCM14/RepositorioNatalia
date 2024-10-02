@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <title>L'Hotel Cèntric</title>
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>
+
+  <body>
+    <section id="hero">
+      <div class="container">
+
+        <video autoplay muted loop>
+          <source src="videos/sea_ocean.mp4" type="video/mp4">
+          <source src="videos/sea_ocean.webm" type="video/webm">
+        </video>
+  
+        <header>
+          <a class="logo" href="/"><img src="images/logo.png" alt="Logo"></a>
+
+          <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+          <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+            <ul class="nav-list">
+                <li><a href="#rooms-section">Habitacions</a></li>
+                <li><a href="#restaurant-section">Restaurant</a></li>
+                <li><a href="#reservar">Reservar</a></li>
+                <li><a href="#contact-section">Contactar</a></li>
+            </ul>
+          </nav>
+
+        </header>
+  
+        <h1>Vine a gaudir de <span>la costa</span> de Barcelona</h1>
+
+        <a href="#reservar" class="btn">Reservar</a>
+
+      </div>
+    </section>
+
+    <main>
+
+      <div class="intro-container">
+
+        <div class="intro-description">
+          <h3>L'Hotel Cèntric</h3>
+          <p>Troba el nostre oasi a primera fila de la platja de Barcelona i gaudeixi de les nostres modernes habitacions amb vistes al mar i relaxa't a la encantadora piscina exterior, perfecta per prendre el sol.</p>
+          <p>El restaurant ofereix una selecció deliciosa de plats internacionals i locals i les nits s'omplen de música en viu que crea un ambient inoblidable.</p>
+          <p>A més, té excel·lents connexions a l'aeroport, cosa que fa que la seva arribada i sortida siguin còmodes i ràpides. Descobriu el veritable encant de Barcelona a l'Hotel Cèntric!</p>
+          <p>Informació d'interès:</p>
+          <p><a href="https://www.fgc.cat/" target="_blank">Ferrocarrils de la Generalitat de Catalunya</a></p>
+          <p><a href="https://www.ambmobilitat.cat/" target="_blank">Xarxa de Busos de Barcelona</a></p>
+        </div>
+
+        <div class="img-slider">
+
+          <div class="slide active">
+            <img src="images/inicio1.jpg" alt="piscina del hotel">
+          </div>
+          <div class="slide">
+            <img src="images/inicio2.jpg" alt="habitación del hotel">
+          </div>
+          <div class="slide">
+            <img src="images/inicio3.jpg" alt="balcón de una habitación">
+          </div>
+          <div class="slide">
+            <img src="images/inicio4.jpg" alt="piscina del hotel">
+          </div>
+      
+          <!-- Navigation buttons -->
+          <div class="navigation">
+            <div class="slidebutton active"></div>
+            <div class="slidebutton"></div>
+            <div class="slidebutton"></div>
+            <div class="slidebutton"></div>
+          </div>
+      
+          
+        </div>
+
+      </div>
+
+      <h3>Al Cèntric hi tenim de tot...</h3>
+
+      <h2>Servei de Spa</h2>
+  
+      <section class="spa-info-container">
+        <img src="images/spa1.jpg" alt="persona recibiendo un masaje en el spa">
+        <div>
+          <h3>Un bon día a l'Spa</h3>
+          <p>Cada racó està dissenyat per brindar-te una experiència de relaxació total. Submergeix-te a la nostra piscina climatitzada que revitalitza cos i ment. Relaxa't i allibera l'estrès diari.</p>
+          <p>El nostre equip d'experts massatgistes està a la teva disposició per oferir massatges relaxants i tractaments personalitzats.</p>
+          <p>Vine i deixa't portar per l'harmonia i el luxe que només nosaltres et podem oferir!</p>
+          <a href="#" class="btn">Més informació</a>
+        </div>
+      </section>
+
+      <h2 id="restaurant-section">Restaurant</h2>
+
+      <div class="gallery">
+
+        <div class="gallery-item">
+          <img src="images/1.jpg" alt="mesa del restaurante vista desde arriba">
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/2.jpeg" alt="mesa y sillas con el mar de fondo">
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/3.jpg" alt="muestra de comida">
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/4.jpg" alt="el restaurante">
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/5.jpg" alt="las vistas desde el restaurante del atardecer">
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/6.jpg" alt="muestra de comida">
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/7.jpg" alt="restaurante">
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/8.jpg" alt="muestra de comida">
+        </div>
+
+      </div>
+
+      <div class="popup-img">
+        <span>&times;</span>
+        <img src="images/1.jpg" alt="">
+      </div>
+
+  
+      <h2 id="rooms-section">La teva habitació preferida</h2>
+
+      <p class="sm-title">Totes les nostres habitacions disposen de</p>
+
+      <div class="icons">
+
+        <div>
+          <img src="images/cajafuerte.jpg" alt="icono de caja fuerte">
+          <p>Caixa forta</p>
+        </div>
+        <div>
+          <img src="images/wifi.jpg" alt="icono de wifi">
+          <p>Wifi</p>
+        </div>
+        <div>
+          <img src="images/climatizacion.jpg" alt="icono de climatización">
+          <p>Aire condicionat i calefacció</p>
+        </div>
+        <div>
+          <img src="images/tv.jpg" alt="icono de televisor">
+          <p>Televisor</p>
+        </div>
+        <div>
+          <img src="images/escritorio.jpg" alt="icono de escritorio">
+          <p>Escriptori</p>
+        </div>
+      </div>
+  
+      <div class="rooms-gallery">
+
+        <div class="room-card">
+            
+          <div class="card-front">
+            <p class="room-title">Habitació Individual</p>
+            <img src="images/hab1.jpg" alt="Habitació Individual">
+          </div>
+
+          <div class="card-back">
+            <p><span>Habitació Individual:</span></p>
+            <p>· 1 llit</p>
+            <p>· 1 lavabo i dutxa</p>
+            <p>· Vistes a la piscina</p>
+            <img src="images/hab1.jpg" alt="Habitació Individual">
+          </div>
+
+        </div>
+
+        <div class="room-card">
+
+          <div class="card-front">
+            <p class="room-title">Habitació Doble</p>
+            <img src="images/hab2.jpg" alt="Habitació Doble">
+          </div>
+
+          <div class="card-back">
+            <p><span>Habitació Doble:</span></p>
+            <p>· 2 llits</p>
+            <p>· 1 lavabo, dutxa i banyera</p>
+            <p>· Vistes a la piscina o la platja</p>
+            <img src="images/hab2.jpg" alt="Habitació Doble">
+          </div>
+
+        </div>
+
+        <div class="room-card">
+
+          <div class="card-front">
+            <p class="room-title">Habitació Grupal</p>
+            <img src="images/hab3.jpg" alt="Habitació Grupal">
+          </div>
+
+          <div class="card-back">
+            <p><span>Habitació Grupal:</span></p>
+            <p>· 3 llits</p>
+            <p>· Espai fins a 5 persones</p>
+            <p>· 1 lavabo i dutxa</p>
+            <p>· Vistes a la piscina o la platja</p>
+            <img src="images/hab3.jpg" alt="Habitació Grupal">
+          </div>
+
+        </div>
+
+        <div class="room-card">
+
+          <div class="card-front">
+            <p class="room-title">Habitació King Suite</p>
+            <img src="images/hab4.jpg" alt="Habitació King Suite">
+          </div>
+
+          <div class="card-back">
+            <p><span>Habitació King Suite:</span></p>
+            <p>· 1 llit King size</p>
+            <p>· 1 lavabo, dutxa i jacuzzi</p>
+            <p>· Servei de càtering gratuït</p>
+            <p>· Vistes a la platja</p>
+            <img src="images/hab4.jpg" alt="Habitación King Suite">
+          </div>
+
+        </div>
+
+      </div>
+
+      <h3 id="reservar">Reserva Online Ara Mateix</h3>
+
+      <p class="reservas-subtitle">O truca al 9X0 X0 X0 XX</p>
+
+      <form action="#" id="form-reservas">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="llegada">Arribada:</label>
+            <input type="date" id="llegada" name="llegada" required>
+          </div>
+    
+          <div class="form-group">
+            <label for="salida">Sortida:</label>
+            <input type="date" id="salida" name="salida" required>
+          </div>
+  
+          <div class="form-group">
+            <label for="habitacion">Tipus d'habitació:</label>
+            <select name="habitacion" id="habitacion" required>
+              <option value="volvo">Habitació Individual</option>
+              <option value="saab">Habitació Grupal</option>
+              <option value="opel">Habitació Doble</option>
+              <option value="audi">Habitació King Suite</option>
+            </select>
+          </div>
+    
+          <div class="form-group">
+            <label for="adultos">Adults:</label>
+            <input type="number" id="adultos" name="adultos" min="1" max="5" required>
+          </div>
+  
+          <div class="form-group">
+            <label for="ninos">Nens:</label>
+            <input type="number" id="ninos" name="ninos" min="0" max="4">
+          </div>
+        </div>
+
+        <div class="form-btn">
+          <button class="btn">Veure disponibilitat</button>
+        </div>
+    
+      </form>
+
+      <h2 id="contact-section">On som?</h2>
+
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5690.5899279746!2d2.1934714758786127!3d41.386983971299976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a30f10a1ca11%3A0x1dcb8e2c56f5f0ba!2sAv.%20del%20Litoral%2C%2018%2C%20Ciutat%20Vella%2C%2008005%20Barcelona!5e1!3m2!1ses!2ses!4v1727777312365!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <h3>Contacta'ns</h3>
+
+      <form action="#" id="formulari-contacte">
+
+        <div class="form-row">
+
+          <div class="form-group">
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" required minlength="2" maxlength="40">
+          </div>
+        
+          <div class="form-group">
+            <label for="mail">El teu mail:</label>
+            <input type="email" id="mail" name="mail" required>
+          </div>
+
+        </div>
+
+        <div class="form-row" id="comentari">
+          <div class="form-group">
+            <label for="message">Comentari:</label>
+            <textarea id="message" name="message" rows="7" cols="50" minlength="30" maxlength="2000" required></textarea>
+          </div>
+        </div>
+
+        <button type="submit" class="btn">Enviar</button>
+
+      </form>
+  
+    </main>
+  
+    <footer>
+      <div class="footer-container">
+        <div class="about">
+          <h3>Conecta amb nosaltres</h3>
+          <p>C/Barcelona 08038</p>
+          <p>9X0 X0 X0 XX</p>
+          <div class="social">
+            <a href="#"><img src="images/facebook.png" alt="logo de facebook"></a>
+            <a href="#"><img src="images/instagram.png" alt="logo de instagram"></a>
+            <a href="#"><img src="images/twitter.png" alt="logo de twitter"></a>
+            <a href="#"><img src="images/tiktok.png" alt="logo de tiktok"></a>
+          </div>
+        </div>
+  
+        <ul id="Links">
+          <h3>Links</h3>
+          <li><a href="#hero">Inici</a></li>
+          <li><a href="#rooms-section">Habitacions</a></li>
+          <li><a href="#restaurant-section">Restaurant</a></li>
+          <li><a href="#reservar">Reservar</a></li>
+          <li><a href="#contact-section">Contactar</a></li>
+        </ul>
+  
+        <div class="newsletter">
+          <h3>Apunta't per rebre notícies i ofertes</h3>
+          <input type="email" id="mail" name="mail" placeholder="El teu mail aquí" required>
+          <button type="submit" class="btn">Subscriure's</button>
+        </div>
+      </div>
+    </footer>
+      
+    <script src="script.js"></script>
+    
+  </body>
+
+</html>
